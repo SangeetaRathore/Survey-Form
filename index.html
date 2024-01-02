@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form id="survey-form">
+      <h1 id="title">Survey Form</h1>
+      <P id="description" >This survey  is organized from UP Government </p>
+      <label for="name" id="name-label">Name: <input id="name" type="text"  required placeholder="Rohit" /></label>
+     
+      <label for="email" id="email-label" >email: <input id="email" type="email" placeholder="@gmail.com"  required/></label>
+     
+      <label id="number-label" for="number">Number: <input id="number" type="number"  min ="1" max="20"  required placeholder="1" /></label>
+
+      <label for="male">Gender:
+        <input type="radio" value="male" name="gender"  id="male"/> Male
+      </label>
+      <label for="female">
+        <input type="radio" value="female" name="gender" id="female"/> Female
+      </label>
+        City : 
+      <select id="dropdown">
+        <option>Select</option>
+        <option>Urban</option>
+        <option>Rural</option>
+      </select>
+      <label> Assest: 
+        <input type="checkbox" id="house" name="house" value="house" /> House
+        <input type="checkbox" id="4wheelvehicle" value="4wheelvehicle" name="4wheelvehicle" /> 4 wheel vehicle
+        <input type="checkbox" id="2wheelvehicle" value="4wheelvehicle" name="2wheelvehicle" /> 2 wheel vehicle
+        <input type="checkbox" id="LPGconnection" value="LPGconnection"  name="LPGconnection" /> LPG Connection
+      </label>
+      <label for="textarea"> Address :
+      <textarea id="textarea" rows="3" cols="15"></textarea></label>
+
+      <button id="submit">Submit</button>
+ 
+    </form>
+  </body>
+</html>
